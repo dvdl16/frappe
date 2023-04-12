@@ -76,11 +76,14 @@ frappe.ui.Capture = class {
 	show() {
 		this.build_dialog();
 
-		if (frappe.is_mobile()) {
-			this.show_for_mobile();
-		} else {
-			this.show_for_desktop();
-		}
+		// Don't use mobile version
+
+		// if (frappe.is_mobile()) {
+		// 	this.show_for_mobile();
+		// } else {
+		// 	this.show_for_desktop();
+		// }
+		this.show_for_desktop();
 	}
 
 	build_dialog() {
